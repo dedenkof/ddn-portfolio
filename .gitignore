@@ -9,9 +9,12 @@
 /coverage
 
 # production
-/build
+build
+public
 
 # misc
+.tmp
+.idea
 .DS_Store
 .env.local
 .env.development.local
