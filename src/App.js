@@ -11,8 +11,6 @@ import { Layout, Header, Navigation, Drawer, Content } from "react-mdl";
     );
   }
 }*/
-
-
 function App() {
   return (
       <Fragment>{/* Uses a transparent header that draws on top of the layout's background */}
