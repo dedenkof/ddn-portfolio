@@ -2,7 +2,8 @@ import React, { Fragment } from 'react';
 //import React, { Component, Fragment } from 'react';
 import './App.css';
 import { Layout, Header, Navigation, Drawer, Content } from "react-mdl";
-
+import Main from './components/main';
+import { Link } from 'react-router-dom';
 
 /*class App extends Component {
   render() {
@@ -18,21 +19,25 @@ function App() {
           <Layout style={{background: 'url(http://www.getmdl.io/assets/demos/transparent.jpg) center / cover'}}>
             <Header transparent title="Title" style={{color: 'white'}}>
               <Navigation>
-                <a href="/">Link</a>
-                <a href="/">Link</a>
-                <a href="/">Link</a>
-                <a href="/">Link</a>
+                <Link to="/">Главная</Link>
+                <Link to="/resume">Резюме</Link>
+                <Link to="/about">О себе</Link>
+                <Link to="/projects">Проекты</Link>
+                <Link to="/blog">Блог</Link>
+                <Link to="/contact">Контакты</Link>
               </Navigation>
             </Header>
-            <Drawer title="Title">
+            <Drawer title="Logotipe">
               <Navigation>
-                <a href="/">Link</a>
-                <a href="/">Link</a>
-                <a href="/">Link</a>
-                <a href="/">Link</a>
+                <Link to="/">Link1</Link>
+                <Link to="/">Link2</Link>
+                <Link to="/">Link3</Link>
+                <Link to="/">Link4</Link>
               </Navigation>
             </Drawer>
-            <Content />
+            <Content>
+            <Main/>
+            </Content>
           </Layout>
         </div></Fragment>
   );
