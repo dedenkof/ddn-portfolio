@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
-//import React, { Component, Fragment } from 'react';
 import './App.css';
-import { Layout, Header, Navigation, Drawer, Content } from "react-mdl";
+import { Layout, Header, Footer, Navigation, Drawer, Content } from "react-mdl";
 import Main from './components/main';
 import { Link } from 'react-router-dom';
 
@@ -14,10 +13,9 @@ import { Link } from 'react-router-dom';
 }*/
 function App() {
   return (
-      <Fragment>{/* Uses a transparent header that draws on top of the layout's background */}
-        <div style={{height: '100vh', position: 'relative'}}>
-          <Layout style={{background: 'url(http://www.getmdl.io/assets/demos/transparent.jpg) center / cover'}}>
-            <Header transparent title="Title" style={{color: 'white'}}>
+      <Fragment>
+          <Layout className="main-wrap">
+            <Header className="header" title="Title">
               <Navigation>
                 <Link to="/">Главная</Link>
                 <Link to="/resume">Резюме</Link>
@@ -39,7 +37,6 @@ function App() {
             <Main/>
             </Content>
           </Layout>
-        </div>
       </Fragment>
   );
 }
