@@ -3,7 +3,7 @@
 body{
   font-family: 'Istok Web', sans-serif;
 }
-.main-wrap,
+.landing-grid,
 .header
 {
   /*background: url(http://www.getmdl.io/assets/demos/transparent.jpg) center / cover;*/
@@ -11,6 +11,14 @@ body{
   background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #ffffff;
+}
+
+.landing-grid{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
 }
 
 .avatar{
@@ -43,4 +51,16 @@ body{
   padding: 1em;
   color: #ffffff;
   font-size: 1.1rem;
+}
+
+.social-links{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+}
+
+.social-links a{
+  color: #ffffff;
+  font-size: 2em;
 }
