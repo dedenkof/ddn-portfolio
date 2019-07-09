@@ -39,7 +39,8 @@ function App() {
             <Main/>
             </Content>
           </Layout>
-        </div></Fragment>
+        </div>
+      </Fragment>
   );
 }
 

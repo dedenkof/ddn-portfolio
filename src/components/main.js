@@ -18,6 +18,6 @@ const Main = () => (
         <Route path="/blog" component={Blog} />
         <Route path="/contact" component={Contact} />
     </Switch>
-)
+);
 
 export default Main;
