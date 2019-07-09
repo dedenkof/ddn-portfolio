@@ -10,7 +10,7 @@ function Landing() {
                         <div className="avatar-text">
                             <h2>Full Stack Web Developer</h2>
                             <hr/>
-                            <p>Web Designer | HTML/CSS | Bootstrap | JavaScript | React | NodeJS | Express | MongoDB | PHP/MySQL</p>
+                            <p>Web Designe | HTML/CSS | Bootstrap | JavaScript | React | NodeJS | Express | MongoDB | PHP/MySQL</p>
                             <div className="social-links">
 
                                 {/* LinkedIn */}
