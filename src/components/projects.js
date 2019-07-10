@@ -11,11 +11,6 @@ class Projects extends Component {
       if(this.state.activeTab === 0){
           return(
               <Fragment>
-              <div className="page-title">
-              <h1>This state is Web Designe</h1>
-                  <hr/>
-              </div>
-
               <div className="projects-grid">
                   {/*Projects 1 */}
                   <Card shadow={2} className="project-item">
@@ -186,6 +181,10 @@ class Projects extends Component {
     render() {
         return (
             <Fragment>
+                <div className="page-title">
+                    <h1>This state is Web Designe</h1>
+                    <hr/>
+                </div>
                 <div className="category-tabs">
                     <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({activeTab: tabId})} ripple>
                         <Tab>Web Designe</Tab>
