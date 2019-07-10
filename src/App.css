@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Istok+Web:400,400i,700,700i&display=swap&subset=cyrillic-ext');
 
-body{
+body {
   font-family: 'Istok Web', sans-serif;
 }
 .landing-grid,
@@ -13,7 +13,13 @@ body{
   color: #ffffff;
 }
 
-.landing-grid{
+.page-title h1{
+  text-align: center;
+  font-size: 2.7rem;
+  margin-top: 0.2em;
+}
+
+.landing-grid {
   position: fixed;
   top: 0;
   left: 0;
@@ -21,20 +27,20 @@ body{
   height: 100vh;
 }
 
-.avatar{
+.avatar {
   display: block;
   height: 300px;
   padding-top: 5em;
   margin: 0 auto;
 }
 
-.avatar-text{
+.avatar-text {
   text-align: center;
   width: 50%;
   margin: auto;
 }
 
-.avatar-text h2{
+.avatar-text h2 {
   font-size: 1.5rem;
   color: #ffffff;
   background: rgba(0,0,0, .7);
@@ -42,25 +48,38 @@ body{
   padding: .2em;
 }
 
-.avatar-text hr{
+.avatar-text hr {
   border-top: 5px dotted white;
   width: 40%;
   margin: auto;
 }
-.avatar-text p{
+.avatar-text p {
   padding: 1em;
   color: #ffffff;
   font-size: 1.1rem;
 }
 
-.social-links{
+.social-links {
   display: flex;
   justify-content: space-between;
   width: 50%;
   margin: auto;
 }
 
-.social-links a{
+.social-links a {
   color: #ffffff;
   font-size: 2em;
 }
+
+.projects-grid {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+
+}
+
+.projects-item {
+  min-width: 450px;
+  margin: auto;
+}
+
