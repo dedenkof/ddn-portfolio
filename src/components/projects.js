@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { Tabs, Tab } from "react-mdl";
+import { Tabs, Tab, Grid, Cell } from "react-mdl";
 
 class Projects extends Component {
     constructor(props) {
@@ -69,8 +69,7 @@ class Projects extends Component {
         return (
             <Fragment>
                 <div className="category-tabs">
-                    <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({activeTab: tabId})}
-                          ripple>
+                    <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({activeTab: tabId})} ripple>
                         <Tab>Web Designe</Tab>
                         <Tab>HTML/CSS</Tab>
                         <Tab>Bootstrap</Tab>
@@ -82,8 +81,14 @@ class Projects extends Component {
                         <Tab>PHP/MySQL</Tab>
 
                     </Tabs>
-                    <section className="projects-content">
-                        {this.toogleCategories()}
+                    <section className="projects-wrap">
+                        <Grid className="projects-grid">
+                            <Cell col={12} tablet={12} phone={12}>
+                                <div className="projects-content">
+                                    {this.toogleCategories()}
+                                </div>
+                            </Cell>
+                        </Grid>
                     </section>
                 </div>
             </Fragment>
