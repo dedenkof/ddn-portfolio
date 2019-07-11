@@ -126,3 +126,40 @@ body {
 
 
 /* contact page css */
+
+/* Resume Page css */
+.resume-left-side {
+    background: #27221F;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+.resume-right-side {
+    background: #27221F;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+.resume-avatar{
+    text-align: center;
+}
+
+.resume-avatar > img {
+    height: 140px;
+}
+
+.resume-name{
+    padding-top: .5em;
+}
+
+.resume-headline{
+    color: grey;
+}
+
+.resume-line{
+    border-top: 3px solid #833fb2;
+    width: 50%;
+    margin: auto;
+}
